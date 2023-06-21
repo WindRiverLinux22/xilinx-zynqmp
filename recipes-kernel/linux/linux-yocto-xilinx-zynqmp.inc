@@ -16,3 +16,5 @@ SRC_URI:append:xilinx-zynqmp = " \
 KERNEL_VERSION_SANITY_SKIP = "1"
 SRCREV_machine:xilinx-zynqmp ?= "${AUTOREV}"
 SRCREV_meta:xilinx-zynqmp ?= "${AUTOREV}"
+
+KERNEL_DTC_FLAGS:append:xilinx-zynqmp = " -@"
